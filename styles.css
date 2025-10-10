@@ -63,7 +63,7 @@ input:focus-visible{outline:3px solid var(--ring); outline-offset:2px; border-ra
 
 /* Hero */
 .hero{
-  position:relative; padding:10px 0 10px; text-align:center; color:var(--ink);
+  position:relative; padding:0px 0 20px; text-align:center; color:var(--ink);
   background:
     radial-gradient(1200px 400px at 50% -10%, rgba(197,22,46,.08), transparent 60%),
     var(--bg);
