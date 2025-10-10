@@ -37,6 +37,33 @@
     </nav>
   </header>
 
+  <section id="inicio" class="hero">
+    <div class="slider">
+      <div class="slide active">
+        <img src="assets/s2.jpg" alt="Equipo colaborando">
+        <div class="overlay"></div>
+        <div class="text">
+          <h1>Transformamos tu organización</h1>
+          <p>Más de 20 años de experiencia combinando consultoría estratégica, gestión del cambio y desarrollo de talento.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="assets/s3.jpg" alt="Consultores profesionales">
+        <div class="overlay"></div>
+        <div class="text">
+          <h1>Cubrimos toda Guatemala</h1>
+          <p>Consultoría y operaciones con presencia en Ciudad de Guatemala, Quetzaltenango, Escuintla y más.</p>
+        </div>
+      </div>
+  
+      <!-- Botones de navegación -->
+      <div class="nav-buttons">
+        <span class="prev">&#10094;</span>
+        <span class="next">&#10095;</span>
+      </div>
+    </div>
+  </section>
+
   <!-- Hero -->
   <section id="inicio" class="hero">
     <div class="container">
@@ -44,7 +71,7 @@
       <p>Más de 20 años de experiencia combinando consultoría estratégica, gestión del cambio y desarrollo de talento, ahora con foco en Guatemala.</p>
       <div class="cta-row">
         <a href="#contacto" class="btn btn-primary">Agenda una consulta gratuita</a>
-        <a href="tel:+50200000000" class="btn btn-ghost">Llámanos: +502 0000 0000</a>
+        <a href="tel:+50273002202" class="btn btn-ghost">Llámanos: +502 7300 2202</a>
       </div>
       <p class="hero-note">Cubrimos toda Guatemala: Ciudad de Guatemala, Quetzaltenango, Escuintla y más.</p>
     </div>
@@ -131,10 +158,9 @@
       <h2 class="section-title"><span>Contacto</span></h2>
       <p class="lead">¿Tienes un proyecto que necesita apoyo inmediato?</p>
       <ul class="contact-list">
-        <li><strong>Tel:</strong> <a href="tel:+50200000000">+502 0000 0000</a></li>
-        <li><strong>Email:</strong> <a href="mailto:contacto@colgarmex.gt">contacto@colgarmex.gt</a></li>
+        <li><strong>Tel:</strong> <a href="tel:+50273002202">+502 7300 2202</a></li>
+        <li><strong>Email:</strong> <a href="mailto:colgarmexcancun@gmail.com">colgarmexcancun@gmail.com</a></li>
         <li><strong>Oficina:</strong> Zona 10, Ciudad de Guatemala</li>
-        <li><strong>Redes:</strong> <a href="#" aria-label="Facebook">Facebook</a> · <a href="#" aria-label="Instagram">Instagram</a> · <a href="#" aria-label="LinkedIn">LinkedIn</a></li>
       </ul>
 
       <form class="contact-inline" onsubmit="return false" aria-label="Suscripción rápida">
@@ -152,16 +178,6 @@
         <p class="small">Consultoría estratégica y desarrollo de talento para organizaciones en Guatemala.</p>
       </div>
       <div>
-        <h4>Navegación</h4>
-        <ul class="footlinks">
-          <li><a href="#empresa">Empresa</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#clientes">Clientes</a></li>
-          <li><a href="#eventos">Eventos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </div>
-      <div>
         <h4>Suscripción</h4>
         <form class="subscribe" onsubmit="return false">
           <input type="email" placeholder="Tu email" aria-label="Correo electrónico">
@@ -169,7 +185,33 @@
         </form>
       </div>
     </div>
-    <div class="tiny">© 2025 Colgarmex Cancún · Hecho con ♥ en Guatemala</div>
+    <div class="tiny">© 2025 Colgarmex Cancún </div>
   </footer>
+
+  <script>
+    let slides = document.querySelectorAll('.slide');
+    let current = 0;
+    
+    function showSlide(index) {
+      slides.forEach(s => s.classList.remove('active'));
+      slides[index].classList.add('active');
+    }
+    
+    document.querySelector('.next').onclick = () => {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    };
+    document.querySelector('.prev').onclick = () => {
+      current = (current - 1 + slides.length) % slides.length;
+      showSlide(current);
+    };
+    
+    // Cambio automático cada 5 segundos
+    setInterval(() => {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    }, 5000);
+    </script>
+
 </body>
 </html>
