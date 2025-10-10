@@ -20,9 +20,13 @@
   <!-- Header / Nav -->
   <header class="header">
     <nav class="container nav">
-      <a class="brand" href="#inicio">Colgarmex <span class="accent">Cancún</span></a>
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        Colgarmex <span class="accent">Cancún</span>
+      </a>
+
       <input id="nav-toggle" type="checkbox" class="nav-toggle" aria-label="Abrir menú">
-      <label for="nav-toggle" class="hamburger" aria-hidden="true">☰</label>
+      <label for="nav-toggle" class="hamburger" aria-hidden="true" aria-label="Abrir navegación">☰</label>
+
       <div class="links">
         <a href="#empresa">Empresa</a>
         <a href="#servicios">Servicios</a>
@@ -35,51 +39,43 @@
 
   <!-- Hero -->
   <section id="inicio" class="hero">
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <h1>Transformamos tu organización con resultados medibles</h1>
-        <p>Más de 20 años de experiencia combinando consultoría estratégica, gestión del cambio y desarrollo de talento, ahora con foco en Guatemala.</p>
-        <div class="cta-row">
-          <a href="#contacto" class="btn btn-primary">Agenda una consulta gratuita</a>
-          <a href="tel:+50200000000" class="btn btn-ghost">Llámanos: +502 0000 0000</a>
-        </div>
-        <p class="hero-note">Cubrimos toda Guatemala: Ciudad de Guatemala, Quetzaltenango, Escuintla y más.</p>
+    <div class="container">
+      <h1>Transformamos tu organización con resultados medibles</h1>
+      <p>Más de 20 años de experiencia combinando consultoría estratégica, gestión del cambio y desarrollo de talento, ahora con foco en Guatemala.</p>
+      <div class="cta-row">
+        <a href="#contacto" class="btn btn-primary">Agenda una consulta gratuita</a>
+        <a href="tel:+50200000000" class="btn btn-ghost">Llámanos: +502 0000 0000</a>
       </div>
-      <div class="hero-media" aria-hidden="true">
-        <!-- Placeholder sin assets -->
-        <div class="media-placeholder">Tu imagen/ilustración aquí</div>
-      </div>
+      <p class="hero-note">Cubrimos toda Guatemala: Ciudad de Guatemala, Quetzaltenango, Escuintla y más.</p>
     </div>
+    <div class="hero-wave" aria-hidden="true"></div>
   </section>
 
   <!-- Empresa -->
   <section id="empresa" class="section">
     <div class="container">
-      <div class="split">
-        <div>
-          <h2>¿Quiénes somos?</h2>
-          <p>
-            Colgarmex Cancún es una consultora boutique que co-crea historias de éxito con
-            sus clientes, integrando estrategia, cultura y talento. Nuestro enfoque combina
-            metodologías probadas con acompañamiento cercano para impulsar
-            crecimiento sostenible y equipos de alto desempeño en Guatemala.
-          </p>
-        </div>
-        <div class="card-list">
-          <article class="card">
-            <h3>Propósito</h3>
-            <p>Potenciar organizaciones más humanas, ágiles y rentables, alineando estrategia, personas y ejecución.</p>
-          </article>
-          <article class="card">
-            <h3>Valores</h3>
-            <ul class="bullets">
-              <li>Integridad y transparencia</li>
-              <li>Profesionalismo y confianza</li>
-              <li>Agilidad e innovación</li>
-              <li>Pasión y creatividad</li>
-            </ul>
-          </article>
-        </div>
+      <h2 class="section-title"><span>¿Quiénes somos?</span></h2>
+      <p class="section-intro">
+        Colgarmex Cancún es una consultora boutique que co-crea historias de éxito con sus clientes,
+        integrando estrategia, cultura y talento. Nuestro enfoque combina metodologías probadas con acompañamiento
+        cercano para impulsar crecimiento sostenible y equipos de alto desempeño en Guatemala.
+      </p>
+
+      <div class="grid-2">
+        <article class="card">
+          <h3>Propósito</h3>
+          <p>Potenciar organizaciones más humanas, ágiles y rentables, alineando estrategia, personas y ejecución.</p>
+        </article>
+
+        <article class="card">
+          <h3>Valores</h3>
+          <ul class="bullets">
+            <li>Integridad y transparencia</li>
+            <li>Profesionalismo y confianza</li>
+            <li>Agilidad e innovación</li>
+            <li>Pasión y creatividad</li>
+          </ul>
+        </article>
       </div>
     </div>
   </section>
@@ -87,139 +83,64 @@
   <!-- Servicios -->
   <section id="servicios" class="section alt">
     <div class="container">
-      <h2>Soluciones organizacionales</h2>
+      <h2 class="section-title"><span>Soluciones organizacionales</span></h2>
       <p class="lead">Diseñamos e implementamos soluciones a la medida para acelerar resultados.</p>
 
-      <div class="grid-3">
-        <article class="svc">
-          <h3>Consultoría Estratégica</h3>
-          <ul class="bullets">
-            <li>Planeación y despliegue estratégico</li>
-            <li>Procesos clave y arquitectura organizacional</li>
-            <li>Tableros de control y OKR/KPI</li>
-          </ul>
-        </article>
-        <article class="svc">
-          <h3>Transformación Cultural</h3>
-          <ul class="bullets">
-            <li>Diagnóstico de clima y cultura</li>
-            <li>Programas de aprendizaje y liderazgo</li>
-            <li>Confianza, colaboración y problem solving</li>
-          </ul>
-        </article>
-        <article class="svc">
-          <h3>Coaching & Mentoring</h3>
-          <ul class="bullets">
-            <li>Coaching ejecutivo y de equipos</li>
-            <li>Mentoría para mandos medios</li>
-            <li>Escuelas internas de liderazgo</li>
-          </ul>
-        </article>
-        <article class="svc">
-          <h3>Gestión de Talento</h3>
-          <ul class="bullets">
-            <li>Evaluaciones 360 y de potencial</li>
-            <li>Planes de carrera y sucesión</li>
-            <li>Performance & feedback continuo</li>
-          </ul>
-        </article>
-        <article class="svc">
-          <h3>Academia & E-learning</h3>
-          <ul class="bullets">
-            <li>Diseño instruccional y contenidos</li>
-            <li>Rutas de aprendizaje adaptativas</li>
-            <li>Medición de impacto (Kirkpatrick)</li>
-          </ul>
-        </article>
-        <article class="svc">
-          <h3>Go-to-Market & Crecimiento</h3>
-          <ul class="bullets">
-            <li>Prospección y desarrollo de clientes</li>
-            <li>Análisis de mercados y segmentos</li>
-            <li>Optimización de experiencia comercial</li>
-          </ul>
-        </article>
-      </div>
+      <ul class="services">
+        <li><strong>Consultoría Estratégica:</strong> planeación, procesos clave, tableros de control y OKR/KPI.</li>
+        <li><strong>Transformación Cultural:</strong> diagnóstico de clima, liderazgo y colaboración.</li>
+        <li><strong>Coaching & Mentoring:</strong> acompañamiento ejecutivo, equipos y mandos medios.</li>
+        <li><strong>Gestión de Talento:</strong> evaluaciones, planes de carrera y desarrollo.</li>
+        <li><strong>Academia & E-learning:</strong> diseño instruccional, rutas de aprendizaje y medición de impacto.</li>
+        <li><strong>Go-to-Market & Crecimiento:</strong> desarrollo de clientes, mercados y optimización comercial.</li>
+      </ul>
     </div>
   </section>
 
-  <!-- Clientes / Alianzas -->
+  <!-- Clientes -->
   <section id="clientes" class="section">
     <div class="container">
-      <h2>Nuestros clientes y alianzas</h2>
-      <p class="lead">Organizaciones que nos retan a ir por el siguiente nivel de desempeño.</p>
-
-      <div class="logos">
-        <div class="logo">Logo 1</div>
-        <div class="logo">Logo 2</div>
-        <div class="logo">Logo 3</div>
-        <div class="logo">Logo 4</div>
-        <div class="logo">Logo 5</div>
-        <div class="logo">Logo 6</div>
-      </div>
+      <h2 class="section-title"><span>Nuestros clientes y alianzas</span></h2>
+      <p class="lead">Organizaciones que confían en nuestro trabajo:</p>
+      <ul class="list-simple">
+        <li>Empresas del sector financiero</li>
+        <li>Compañías de manufactura</li>
+        <li>Negocios de retail y consumo</li>
+        <li>Startups tecnológicas</li>
+        <li>Industrias de alimentos y bebidas</li>
+        <li>Servicios profesionales</li>
+      </ul>
     </div>
   </section>
 
-  <!-- Eventos y noticias -->
+  <!-- Eventos -->
   <section id="eventos" class="section alt">
     <div class="container">
-      <h2>Eventos y noticias</h2>
-      <div class="cards-3">
-        <article class="news">
-          <h3>E-learning que impacta</h3>
-          <p>Diseño y producción efectiva con IA aplicada al aprendizaje corporativo.</p>
-          <p class="meta">18 de julio de 2024 · Taller</p>
-          <a href="#contacto" class="text-link">Quiero más información →</a>
-        </article>
-        <article class="news">
-          <h3>Planificación Estratégica HR 2026</h3>
-          <p>Hoja de ruta para capital humano: capacidades, datos y cultura.</p>
-          <p class="meta">18 de julio de 2024 · Webinar</p>
-          <a href="#contacto" class="text-link">Reservar cupo →</a>
-        </article>
-        <article class="news">
-          <h3>5 estrategias para acelerar el crecimiento</h3>
-          <p>Prioridades comerciales para mercados de Guatemala.</p>
-          <p class="meta">18 de julio de 2024 · Artículo</p>
-          <a href="#contacto" class="text-link">Leer más →</a>
-        </article>
-      </div>
+      <h2 class="section-title"><span>Eventos y noticias</span></h2>
+      <ul class="list-simple timeline">
+        <li><strong>E-learning que impacta:</strong> taller sobre IA aplicada al aprendizaje corporativo (julio 2024).</li>
+        <li><strong>Planificación Estratégica HR 2026:</strong> webinar sobre cultura y capital humano (julio 2024).</li>
+        <li><strong>5 estrategias para acelerar el crecimiento:</strong> artículo sobre mercados guatemaltecos (julio 2024).</li>
+      </ul>
     </div>
   </section>
 
   <!-- Contacto -->
   <section id="contacto" class="section">
     <div class="container">
-      <div class="split">
-        <div>
-          <h2>Contacto</h2>
-          <p class="lead">¿Tienes un proyecto que necesita apoyo inmediato?</p>
-          <ul class="contact-list">
-            <li><strong>Tel:</strong> +502 0000 0000</li>
-            <li><strong>Email:</strong> <a href="mailto:contacto@colgarmex.gt">contacto@colgarmex.gt</a></li>
-            <li><strong>Oficina:</strong> Zona 10, Ciudad de Guatemala (referencia)</li>
-            <li><strong>Redes:</strong> <a href="#">Facebook</a> · <a href="#">Instagram</a> · <a href="#">LinkedIn</a></li>
-          </ul>
-        </div>
-        <form class="form">
-          <label>Nombre* <input type="text" required></label>
-          <label>Email* <input type="email" required></label>
-          <label>Teléfono* <input type="tel" required></label>
-          <label>Empresa <input type="text"></label>
-          <label>Interés
-            <select>
-              <option>Consultoría Estratégica</option>
-              <option>Transformación Cultural</option>
-              <option>Coaching & Mentoring</option>
-              <option>Gestión de Talento</option>
-              <option>Academia & E-learning</option>
-              <option>Go-to-Market & Crecimiento</option>
-            </select>
-          </label>
-          <label>Mensaje <textarea rows="4" placeholder="Cuéntanos brevemente tu necesidad"></textarea></label>
-          <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
-      </div>
+      <h2 class="section-title"><span>Contacto</span></h2>
+      <p class="lead">¿Tienes un proyecto que necesita apoyo inmediato?</p>
+      <ul class="contact-list">
+        <li><strong>Tel:</strong> <a href="tel:+50200000000">+502 0000 0000</a></li>
+        <li><strong>Email:</strong> <a href="mailto:contacto@colgarmex.gt">contacto@colgarmex.gt</a></li>
+        <li><strong>Oficina:</strong> Zona 10, Ciudad de Guatemala</li>
+        <li><strong>Redes:</strong> <a href="#" aria-label="Facebook">Facebook</a> · <a href="#" aria-label="Instagram">Instagram</a> · <a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+      </ul>
+
+      <form class="contact-inline" onsubmit="return false" aria-label="Suscripción rápida">
+        <input type="email" placeholder="Tu email" aria-label="Correo electrónico">
+        <button class="btn btn-primary">Quiero más información</button>
+      </form>
     </div>
   </section>
 
@@ -242,7 +163,7 @@
       </div>
       <div>
         <h4>Suscripción</h4>
-        <form class="subscribe">
+        <form class="subscribe" onsubmit="return false">
           <input type="email" placeholder="Tu email" aria-label="Correo electrónico">
           <button class="btn">Suscribirme</button>
         </form>
