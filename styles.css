@@ -49,6 +49,7 @@ input:focus-visible{outline:3px solid var(--ring); outline-offset:2px; border-ra
 .accent{color:var(--red)}
 .links{display:flex;gap:20px;align-items:center}
 .links a{color:var(--ink)}
+.dark {color: #000;}
 .links a:hover{color:var(--red)}
 .btn{
   border:1px solid var(--red);padding:10px 16px;border-radius:999px;transition:.2s ease;
@@ -270,4 +271,42 @@ input:focus-visible{outline:3px solid var(--ring); outline-offset:2px; border-ra
   .text p {
     font-size: 15px;
   }
+}
+
+/* --- LOGO --- */
+.logo{
+  height:60px;           /* alto en desktop */
+  width:auto;
+  display:block;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:900;
+  font-size:20px;
+  letter-spacing:.2px;
+}
+
+.brand-text{line-height:1}
+
+/* Footer brand con logo */
+.brand-footer{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:900;
+  font-size:18px;
+  margin-bottom:8px;
+}
+
+.logo-footer{
+  height:34px;           /* un poco más pequeño en el footer */
+}
+
+/* Responsivo */
+@media (max-width: 768px){
+  .logo{height:34px}
+  .logo-footer{height:30px}
 }
