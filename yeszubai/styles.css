@@ -119,6 +119,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 .product h3{font-family:var(--serif);font-weight:400;font-size:24px;color:var(--brown);margin-bottom:6px}
 .product p{color:var(--muted);font-size:15px}
 .products-note{text-align:center;margin-top:44px;color:var(--muted)}
+.products.three{grid-template-columns:repeat(3,1fr);gap:32px}
+.products.three .product-art{aspect-ratio:1/1;padding:0 16% 20%}
+.products.three .product p{max-width:300px;margin:0 auto}
 
 /* Mayoristas */
 .wholesale{background:var(--brown);color:var(--linen);padding:104px 0}
@@ -147,6 +150,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 .visit-card dl{display:grid;gap:18px}
 .visit-card dt{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:600}
 .visit-card dd{font-size:17px;color:var(--brown);font-weight:500}
+.visit-card dd a{color:var(--brown);text-decoration:underline;text-decoration-color:var(--terracotta);text-underline-offset:3px}
 .visit-card .btn{margin-top:28px}
 .form-card{background:#fff;border-radius:28px;padding:44px;border:1px solid var(--line)}
 .form-card h3{font-family:var(--serif);font-weight:400;font-size:30px;color:var(--brown);margin-bottom:6px}
@@ -187,7 +191,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
   .hero{padding:48px 0 72px}
   .products{gap:18px}
   .product h3{font-size:20px}
-  .buyers,.steps{grid-template-columns:1fr}
+  .buyers,.steps,.products.three{grid-template-columns:1fr}
+  .products.three .product-art{max-width:300px;margin-left:auto;margin-right:auto}
   .visit-card,.form-card{padding:28px}
 }
 
